@@ -1,0 +1,60 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-height: 75vh;
+    overflow: scroll;
+}
+
+.form-container h2 {
+    color: #1F3D7A;
+}
+
+.btn-primary {
+    background-color: #1F3D7A;
+    border-color: #1F3D7A;
+}
+
+.btn-primary:hover {
+    background-color: #1A2C5E;
+    border-color: #1A2C5E;
+}
+
+.toast-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 11;
+}
+
+.toast {
+    border-radius: 8px;
+    background-color: #1F3D7A;
+    color: #fff;
+}
+
+.toast-body {
+    color: #fff;
+}
+
+.toast-header {
+    background-color: #1A2C5E;
+    border-bottom: 1px solid #fff;
+}
+
+.toast-header .btn-close {
+    filter: invert(100%);
+}
+
+/* #missingPersonForm{
+    overflow: scroll;
+    height: calc(100% - 40px - 1.5rem - 2rem);
+} */

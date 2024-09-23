@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Found - Aishwarya Patel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./media/css/index.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            padding-top: 80px;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 15px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+        }
+
+        .img-container {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 10px;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .details-container {
+            width: 100%;
+            padding: 8px;
+        }
+
+        .details-container h2 {
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+            color: #007bff;
+        }
+
+        .details-container p {
+            font-size: 0.85rem;
+            margin: 4px 0;
+        }
+
+        .contact-info {
+            background-color: #f9fafb;
+            padding: 8px;
+            margin: 12px 0;
+            border-radius: 6px;
+            border: 1px solid #e3e6ea;
+        }
+
+        .contact-info p {
+            margin: 4px 0;
+            font-size: 0.85rem;
+        }
+
+        .contact-info p span {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        .percentage-match-container {
+            padding: 8px;
+            background-color: #e2f0ff;
+            border-left: 4px solid #007bff;
+            margin: 12px 0;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .percentage-match-container p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        .percentage-bar {
+            flex: 1;
+            height: 18px;
+            background: linear-gradient(90deg, #007bff 85%, #e2e6ea 85%);
+            border-radius: 8px;
+            margin-left: 10px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .percentage-bar::before {
+            content: '85%';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .img-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./media/images/logo.png" alt="TALASH Logo" id="logo" class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Toggler for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./upload.php">Submit Case</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./all-missing-records.php">Unidentified Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./all-found-records.php">Identified Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-bell" data-bs-toggle="popover" data-bs-placement="bottom" title="Notifications"
+                            data-bs-content="New Match Found for FIR Number: FIR54321"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="./login.html" role="button">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <!-- Image Section -->
+            <div class="img-container">
+                <img src="media\images\user\child4.jpeg" alt="Aishwarya Patel">
+            </div>
+
+            <!-- Details Section -->
+            <div class="details-container">
+                <h2>Match Found: Aishwarya Patel</h2>
+                <p><strong>Age:</strong> 13</p>
+                <p><strong>Address:</strong> 34, C.G. Road, Ahmedabad, Gujarat, 380009</p>
+                <p><strong>Identifying Mark:</strong> Tattoo of a star on the right arm</p>
+                <p><strong>FIR Number:</strong> FIR54321</p>
+            </div>
+        </div>
+
+        <!-- Percentage Match Section -->
+        <div class="percentage-match-container">
+            <p>Match Percentage:</p>
+            <div class="percentage-bar"></div>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="contact-info">
+            <p><span>Contact Details:</span> 7910123456</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

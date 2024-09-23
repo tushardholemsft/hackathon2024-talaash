@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #1F3D7A;
+    --secondary-color: #090909;
+    --font-family: 'Poppins', sans-serif;
+    --font-size-base: 16px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --spacing-unit: 1rem;
+    --border-radius: 4px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container-fluid {
+    padding: 0;
+    height: 100vh;
+    /* Full viewport height */
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory;
+    /* Snap on vertical scroll */
+}
+
+section {
+    height: 100vh;
+    /* Full viewport height for each section */
+    scroll-snap-align: start;
+    /* Snap to the start of the section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+#logo {
+    width: 8rem;
+}
+
+.navbar {
+    padding-right: 2rem;
+    padding-left: 1rem;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+    height: 5rem;
+    overflow: hidden;
+}
+
+.custom-navbar{
+    background-color: rgb(176, 210, 245);
+}
+
+.navbar-nav>li:last-child {
+    margin-left: 2rem;
+}
+
+.how-to-use {
+    margin-right: 2rem;
+}
+
+.navbar-nav>li:not(:last-child) {
+    transition: font-weight 0.1s ease-in-out;
+    font-weight: 500;
+}
+
+.navbar-nav>li:not(:last-child):hover {
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-bell {
+    font-size: 1.8rem;
+}
+
+/* ------------------------------ */
+
+.hero-section {
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+#landing-page>div {
+    position: absolute;
+    top: 15rem;
+}
+
+.hero-title {
+    font-size: 10rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    letter-spacing: 0.2em;
+}
+
+.hero-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+.hero-image {
+    position: absolute;
+    background-image: url(../images/undraw_family_vg76.svg);
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+/* --------------------------------- */
+
+#about,
+#how-it-works {
+    height: 100dvh;
+    width: 100dvw;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#about,
+#how-it-works {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.about-text h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.feature-card .feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 12rem;
+    width: 12rem;
+}
+
+.ai-support {
+    background-image: url(../images/undraw_artificial_intelligence_re_enpp.svg);
+}
+
+.notification {
+    background-image: url(../images/undraw_confidential_letter_w6ux.svg);
+}
+
+.community {
+    background-image: url(../images/undraw_showing_support_re_5f2v.svg);
+}
+
+.add-image {
+    background-image: url(../images/undraw_mobile_profile_7hvy.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 15rem;
+    width: 100%;
+    display: block;
+}
+
+.scan {
+    background-image: url(../images/undraw_sentiment_analysis_jp6w.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 15rem;
+    width: 100%;
+    display: block;
+}
+
+.step-to-do {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-arrow-right {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div:has(#missingPersonsContainer),
+div:has(#add-missing-person-report) {
+    margin-top: 5rem;
+
+}
+
+#missingPersonsContainer > div {
+    max-height: 18rem;
+    overflow: hidden;
+}
+
+.custom-legend {
+    display: block;
+    width: fit-content;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border-radius: 2rem;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: -1em 0 1em;
+    /* Adjust to control spacing around the legend */
+    position: relative;
+    top: -1px;
+    /* Align with the fieldset border */
+    left: 1px;
+    /* Adjust as needed to align with the fieldset */
+    z-index: 1;
+    /* Ensure it appears above the fieldset border */
+}
+
+#add-missing-person-report {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: calc(100dvh - 6rem);
+}
+
+.card :has(img) {
+    overflow: hidden;
+}
+
+.card img {
+    transition: all 0.3s ease-in-out;
+    /* max-width: 10rem; */
+    aspect-ratio: 4 / 5;
+}
+
+.card img:hover {
+    scale: 1.05;
+}
+
+.user-details {
+    background-color: #f5f5f5;
+    transition: all 0.2s;
+}
+
+.user-details:hover {
+    background-color: #eeeeee;
+}

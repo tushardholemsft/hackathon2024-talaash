@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Aishwarya Patel",
+        "address": "34, C.G. Road, Ahmedabad, Gujarat",
+        "pincode": 380009,
+        "mark": "Tattoo of a star on the right arm",
+        "photo_url": "child5.png",
+        "age": 13,
+        "FIR_number": "FIR54321",
+        "metadata": {
+            "contact_details": "7910123456"
+        },
+        "isFound": false,
+        "isDeleted": false
+    },
+    {
+        "name": "Ravi Kumar",
+        "address": "15, MG Road, Bengaluru, Karnataka",
+        "pincode": 560001,
+        "mark": "Scar on the right hand",
+        "photo_url": "sample8.jpg",
+        "age": 32,
+        "FIR_number": "FIR12345",
+        "metadata": {
+            "contact_details": "8901234567"
+        },
+        "isFound": false,
+        "isDeleted": false
+    },
+    {
+        "name": "Indumati Yadav",
+        "address": "22, Boring Road, Patna, Bihar",
+        "pincode": 800001,
+        "mark": "Mole on the left side of the neck",
+        "photo_url": "indian1.jpg",
+        "age": 27,
+        "FIR_number": "FIR67890",
+        "metadata": {
+            "contact_details": "7890123456"
+        },
+        "isFound": true,
+        "isDeleted": false
+    },
+    {
+        "name": "Pooja Chavan",
+        "address": "12, FC Road, Pune, Maharashtra",
+        "pincode": 411004,
+        "mark": "Pierced nose",
+        "photo_url": "child4.jpeg",
+        "age": 12,
+        "FIR_number": "FIR98765",
+        "metadata": {
+            "contact_details": "8745678901"
+        },
+        "isFound": true,
+        "isDeleted": false
+    },
+    {
+        "name": "Arjun Singh",
+        "address": "28, Canaught place delhi",
+        "pincode": "110011",
+        "mark": "Burn mark on left leg",
+        "age": "8",
+        "FIR_number": "FIR3456",
+        "metadata": {
+            "contact_details": "8976547998"
+        },
+        "photo_url": "child3.jpg",
+        "isFound": false,
+        "isDeleted": false
+    }
+]
